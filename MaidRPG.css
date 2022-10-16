@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "jandy-swirly-twirly";
+    src: url("https://drive.google.com/file/d/1FqujY3VVd6L_FGy4vRdBY-fYOQ7uIgbP/view?usp=sharing") format('truetype');
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+    #attributes-label, #athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
+    font-family: 'Bad Script', cursive;
+ 
+}
 #attributes-container{
     display:flex;
     justify-content: space-evenly;
@@ -8,7 +19,7 @@
     height: 96px;
     background-color: white;
     border: 1px solid grey;
-    border-radius: 10px;
+    border-radius: 15px;
     /* display: flex;
 
 
@@ -42,6 +53,7 @@ align-self: center;
     background-color: lightgray;
     border-top: 30px solid lightgrey;
     border-bottom: 10px solid lightgrey;
+    border-radius: 15px;
 }
 
 #attributes-label{
@@ -50,5 +62,11 @@ align-self: center;
     /*top: -15px;
     left: 23px;*/
     padding: 2px;
+    margin-left: 5px;
+    /*bottom: 0px;*/
     z-index: 1;
+    font-size: 20px;
+    /*font-family: jandy-swirly-twirly;*/
+    /*Arial, Helvetica, sans-serif;*/
 }
+
