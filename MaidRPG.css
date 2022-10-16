@@ -5,9 +5,10 @@
 .sheet-skill-container{
     box-sizing: border-box;
     width: 120px;
-    height: 100px;
+    height: 96px;
     background-color: white;
     border: 1px solid grey;
+    border-radius: 10px;
     /* display: flex;
 
 
@@ -15,11 +16,14 @@
 }
 
 
-
-.sheet-skill-label{
-display: block;
-align-self: flex-start;
+#athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
+    display: block;
+    text-align: center;
 }
+/*.sheet-skill-label{
+/*display: block;
+align-self: center;
+}*/
 
 #will, #luck, #cunning, #skill, #affection, #athletics{
     display: block;
