@@ -28,7 +28,9 @@ align-self: flex-start;
     margin-right: auto;
     margin-left: auto;
     background-color: white;
+    border:0;
     z-index: 0;
+    font-size: 30px;
 }
 
 #attributes-container{
