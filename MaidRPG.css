@@ -28,13 +28,22 @@
 
 
 #athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
-    display: block;
-    text-align: center;
+    display: inline;
+    margin-left: 8px;
 }
+
+#luck-roll{
+    float: right ;
+}
+
 /*.sheet-skill-label{
 /*display: block;
 align-self: center;
 }*/
+
+#athletics-label:hover, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
+    color: red;
+}
 
 #will, #luck, #cunning, #skill, #affection, #athletics{
     display: block;
