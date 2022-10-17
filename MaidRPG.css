@@ -1,14 +1,11 @@
-@font-face {
-    font-family: "jandy-swirly-twirly";
-    src: url("https://drive.google.com/file/d/1FqujY3VVd6L_FGy4vRdBY-fYOQ7uIgbP/view?usp=sharing") format('truetype');
-    }
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Fuzzy+Bubbles&family=La+Belle+Aurore&family=Nothing+You+Could+Do&family=Rancho&display=swap');
+    
+    
 
-    @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-
-    #attributes-label, #athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
-    font-family: 'Bad Script', cursive;
- 
+.charsheet button[type=roll].txt-btn, #attributes-label, #athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
+    font-family: 'Fuzzy Bubbles', cursive;
 }
+
 #attributes-container{
     display:flex;
     justify-content: space-evenly;
@@ -20,6 +17,10 @@
     background-color: white;
     border: 1px solid grey;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     /* display: flex;
 
 
@@ -32,8 +33,30 @@
     margin-left: 8px;
 }
 
-#luck-roll{
-    float: right ;
+
+
+.charsheet button[type=roll].txt-btn{
+    display: block;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: none;
+    border: rgba(255, 255, 255, 1);
+    width: 120px;
+    /*padding: 0% 30px;;*/
+    font-weight: bold;
+    border-radius: 10px;
+    /*font-family: 'La Belle Aurore', cursive;*/
+}
+
+
+.charsheet button[type=roll].txt-btn:hover{
+    background-color:white;
+    color: red;
+    border: white;
+}
+
+
+.ui-dialog .charsheet button[type=roll]:before {
+    content: "";
 }
 
 /*.sheet-skill-label{
@@ -78,4 +101,10 @@ align-self: center;
     /*font-family: jandy-swirly-twirly;*/
     /*Arial, Helvetica, sans-serif;*/
 }
+
+/* font-family: 'Covered By Your Grace', cursive;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'La Belle Aurore', cursive;
+font-family: 'Nothing You Could Do', cursive;
+font-family: 'Rancho', cursive;*/
 
