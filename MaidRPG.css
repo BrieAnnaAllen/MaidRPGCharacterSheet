@@ -2,12 +2,36 @@
     
     
 
-.charsheet button[type=roll].txt-btn, #attributes-label, #athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
+ #game-title, #maid-types-container > label, #maid-types-container > select, .charsheet button[type=roll].txt-btn, #attributes-label, #athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
+/*.sheet-container{
+    display: grid;
+    max-height: 1200;
+    min-height: 1200;
+    grid-template-columns: 50px 270px 200px 70px 270px 50px; /* 7 
+    grid-template-rows: 50px 200px 3fr 100px 3fr 50px; /* ~1200 px*/ /*11
+}*/
 
 
+#maid-types-container{
+    box-sizing: border-box;
+    width: 60%;
+    border: dotted pink 3px;
+    border-radius: 10px;
+}
+#maid-types-container > label{
+    margin-left: 10px;
+}
+#maid-types-container > label, #maid-types-container > p{
+  display: inline;
+}
+#maid-types-container > select{
+    width: 35%;
+    border: none;
+
+}
 #attributes-container{
     display:flex;
     justify-content: space-evenly;
@@ -36,6 +60,18 @@
 }
 
 
+#game-title{
+    width: 60%;
+    height: 8%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#game-title > span{
+    font-weight: bold;
+    font-size: 40px;
+}
+
 
 .charsheet button[type=roll].txt-btn{
     display: block;
@@ -54,6 +90,11 @@
     background-color:white;
     color: red;
     border: white;
+}
+
+#attributes-container, #attributes-label{
+    grid-column: 1 / 7;
+    grid-row: 
 }
 
 
