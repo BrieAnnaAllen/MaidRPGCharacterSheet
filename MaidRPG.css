@@ -2,7 +2,7 @@
     
     
 
- #game-title, #maid-types-container > label, #maid-types-container > select, .charsheet button[type=roll].txt-btn, #attributes-label, #athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
+ .fuzzy-font{
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
@@ -52,7 +52,11 @@
 
    align-items: center;*/
 }
-
+.optgroup-replacement{
+    background-color: grey;
+    color: white; 
+    font-weight: bold;
+}
 
 #athletics-label, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
     display: inline;
