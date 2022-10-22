@@ -76,6 +76,16 @@
     font-size: 40px;
 }
 
+#special-qualities-container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: dotted pink 3px;
+    width: 30%;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px; 
+}
 
 .charsheet button[type=roll].txt-btn{
     display: block;
@@ -135,6 +145,9 @@ align-self: center;
     border-radius: 15px;
 }
 
+#special-qualities-label{
+    margin-left: 15px;
+}
 #attributes-label{
     position: absolute;
     color: black;
