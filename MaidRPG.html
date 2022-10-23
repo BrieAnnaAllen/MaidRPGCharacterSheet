@@ -25,7 +25,8 @@
     </select>
     </div>
 
-    <div id="special-qualities-container">
+    <div id="sq-msm-container">
+    <div id="special-qualities-container" class="sheet-container-design">
         <label id="special-qualities-label"> Special Qualities</label>
         <select name="special-qualities" id="special-qualities-1">
             <option value="select">(select one)</option>
@@ -764,6 +765,7 @@
         </select>
     </div>
     <div id="root-ex-pow-container">
+        <div id="maid-roots-container">
         <label id="maid-roots-label">Maid Roots</label>
         <select name="maid-roots" id="maid-roots">
             <option value="select">(select one)</option>
@@ -786,28 +788,75 @@
             <option value="bridal-training"> (63)-(64) Bridal Training</option>
             <option value="who-knows"> (61)-(62) Who Knows?</option>
         </select>
-        <label id="stress-explosion-label"> Stress Explosion!</label>
-        <select name="stress-explosion" id="stress-explosion">
-            <option value="select">(select one)</option>
-            <option value="alcohol-drugs"> (11)-(12) Alcohol/Drugs</option>
-            <option value="stealing"> (13)-(14) Stealing</option>
-            <option value="violence"> (15)-(16) Violence</option>
-            <option value="gambling"> (21)-(22) Gambling</option>
-            <option value="racing"> (23)-(24) Racing</option>
-            <option value="teasing"> (25)-(26) Teasing</option>
-            <option value="mischief"> (31)-(32) Mischief</option>
-            <option value="running-away"> (33)-(34) Running Away</option>
-            <option value="complaining"> (35)-(36) Complaining</option>
-            <option value="seclusion"> (41)-(42) Seclusion</option>
-            <option value="crying"> (43)-(44) Crying</option>
-            <option value="rampage"> (45)-(46) Rampage</option>
-            <option value="shopping"> (51)-(52) Shopping</option>
-            <option value="sleep"> (53)-(54) Sleep</option>
-            <option value="binge"> (55)-(56) Binge</option>
-            <option value="prayer"> (61)-(62) Prayer</option>
-            <option value="spoiled-child"> (63)-(64) Spoiled Child</option>
-            <option value="player-choice"> (61)-(62) Player Choice</option>
-        </select>
+        </div>
+
+        <div id="stress-explosion-container" >
+            <label id="stress-explosion-label"> Stress Explosion!</label>
+            <select name="stress-explosion" id="stress-explosion">
+                <option value="select">(select one)</option>
+                <option value="alcohol-drugs"> (11)-(12) Alcohol/Drugs</option>
+                <option value="stealing"> (13)-(14) Stealing</option>
+                <option value="violence"> (15)-(16) Violence</option>
+                <option value="gambling"> (21)-(22) Gambling</option>
+                <option value="racing"> (23)-(24) Racing</option>
+                <option value="teasing"> (25)-(26) Teasing</option>
+                <option value="mischief"> (31)-(32) Mischief</option>
+                <option value="running-away"> (33)-(34) Running Away</option>
+                <option value="complaining"> (35)-(36) Complaining</option>
+                <option value="seclusion"> (41)-(42) Seclusion</option>
+                <option value="crying"> (43)-(44) Crying</option>
+                <option value="rampage"> (45)-(46) Rampage</option>
+                <option value="shopping"> (51)-(52) Shopping</option>
+                <option value="sleep"> (53)-(54) Sleep</option>
+                <option value="binge"> (55)-(56) Binge</option>
+                <option value="prayer"> (61)-(62) Prayer</option>
+                <option value="spoiled-child"> (63)-(64) Spoiled Child</option>
+                <option value="player-choice"> (65)-(66) Player Choice</option>
+            </select>
+        </div>
+        <div id="maid-power-container" >
+            <label id="maid-power-label"> Maid Power</label>
+            <select name="maid-power" id="maid-power">
+                <option value="select">(select one)</option>
+                <option disabled class="optgroup-replacement">Highest Attribute: Athletics</option>
+                    <option value="super-evasion"> &nbsp;&nbsp;&nbsp;&nbsp;(1) Super Evasion</option>
+                    <option value="iron-wall">&nbsp;&nbsp;&nbsp;&nbsp;(2) Iron Wall</option>
+                    <option value="trespass">&nbsp;&nbsp;&nbsp;&nbsp;(3) Trespass</option>
+                    <option value="weapon-nowhere">&nbsp;&nbsp;&nbsp;&nbsp;(4) Weapon From Nowhere</option>
+                    <option value="giant-weapon">&nbsp;&nbsp;&nbsp;&nbsp;(5) Giant Weapon</option>
+                    <option value="ultimate-retort">&nbsp;&nbsp;&nbsp;&nbsp;(6) Ultimate Retort</option>
+                <option disabled class="optgroup-replacement">Highest Attribute: Affection</option>
+                    <option value="maidens-tears"> &nbsp;&nbsp;&nbsp;&nbsp;(1) Maiden's Tears</option>
+                    <option value="world-two">&nbsp;&nbsp;&nbsp;&nbsp;(2) World for Two</option>
+                    <option value="power-friendship">&nbsp;&nbsp;&nbsp;&nbsp;(3) Power of Friendship</option>
+                    <option value="cooked-love">&nbsp;&nbsp;&nbsp;&nbsp;(4) Cooked With Love</option>
+                    <option value="window-soul">&nbsp;&nbsp;&nbsp;&nbsp;(5) Window of the Soul</option>
+                    <option value="passionate-gaze">&nbsp;&nbsp;&nbsp;&nbsp;(6) Passionate Gaze</option>
+                <option disabled class="optgroup-replacement">Highest Attribute: Skill</option>
+                    <option value="lock-picking"> &nbsp;&nbsp;&nbsp;&nbsp;(1) Lock Picking</option>
+                    <option value="stalking">&nbsp;&nbsp;&nbsp;&nbsp;(2) Stalking</option>
+                    <option value="lie-detector">&nbsp;&nbsp;&nbsp;&nbsp;(3) Lie Detector</option>
+                    <option value="ultimate-menu">&nbsp;&nbsp;&nbsp;&nbsp;(4) Ultimate Menu</option>
+                    <option value="instant-cleaning">&nbsp;&nbsp;&nbsp;&nbsp;(5) Instant Cleaning</option>
+                    <option value="4d-dress">&nbsp;&nbsp;&nbsp;&nbsp;(6) 4-D Dress</option>
+                <option disabled class="optgroup-replacement">Highest Attribute: Cunning</option>
+                    <option value="punishment"> &nbsp;&nbsp;&nbsp;&nbsp;(1) Punishment</option>
+                    <option value="instant-restraint">&nbsp;&nbsp;&nbsp;&nbsp;(2) Instant Restraining</option>
+                    <option value="coercion">&nbsp;&nbsp;&nbsp;&nbsp;(3) Coercion</option>
+                    <option value="trap">&nbsp;&nbsp;&nbsp;&nbsp;(4) Trap</option>
+                    <option value="fake-crying">&nbsp;&nbsp;&nbsp;&nbsp;(5) Fake Crying</option>
+                    <option value="mockery">&nbsp;&nbsp;&nbsp;&nbsp;(6) Mockery</option>
+                <option disabled class="optgroup-replacement">Highest Attribute: Luck</option>
+                    <option value="karma"> &nbsp;&nbsp;&nbsp;&nbsp;(1) Karma</option>
+                    <option value="saw-it">&nbsp;&nbsp;&nbsp;&nbsp;(2) Saw It</option>
+                    <option value="teleport">&nbsp;&nbsp;&nbsp;&nbsp;(3) Teleport</option>
+                    <option value="escape">&nbsp;&nbsp;&nbsp;&nbsp;(4) Escape</option>
+                    <option value="foreboding">&nbsp;&nbsp;&nbsp;&nbsp;(5) Foreboding</option>
+                    <option value="chance-meeting">&nbsp;&nbsp;&nbsp;&nbsp;(6) Chance Meeting</option>
+            </select>
+        </div>
+    </div>
+
     </div>
 
     <!--<label for="name">Name<input id="name" type="text" class="sheet-white-input-box"/></label>

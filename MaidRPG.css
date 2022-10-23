@@ -30,7 +30,14 @@
 #maid-types-container > select{
     width: 35%;
     border: none;
+}
+#special-qualities-container > select{
+    border: none;
+    border-bottom: solid black 1px;
+}
 
+#maid-roots-container > select, #stress-explosion-container > select, #maid-power-container > select{
+    border: none;
 }
 #attributes-container{
     display:flex;
@@ -76,12 +83,23 @@
     font-size: 40px;
 }
 
+#maid-roots-container, #stress-explosion-container, #maid-power-container{
+    box-sizing: border-box;
+    border: dotted pink 3px;
+    width: 100%;
+    height: 33%;
+    border-radius: 10px;
+    margin: 10px; 
+}
+
+
 #special-qualities-container{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     border: dotted pink 3px;
-    width: 30%;
+    width: 33%;
+    height: 250px;
     align-items: center;
     border-radius: 10px;
     margin: 10px; 
@@ -108,7 +126,6 @@
 
 #attributes-container, #attributes-label{
     grid-column: 1 / 7;
-    grid-row: 
 }
 
 
@@ -116,6 +133,9 @@
     content: "";
 }
 
+#sq-msm-container{
+    display:flex;
+}
 /*.sheet-skill-label{
 /*display: block;
 align-self: center;
@@ -145,7 +165,8 @@ align-self: center;
     border-radius: 15px;
 }
 
-#special-qualities-label{
+
+#special-qualities-label, #stress-explosion-label, #maid-roots-label, #maid-power-label{
     margin-left: 15px;
 }
 #attributes-label{
