@@ -11,7 +11,7 @@
     max-height: 1200;
     min-height: 1200;
     grid-template-columns: 50px 270px 200px 70px 270px 50px; /* 7 
-    grid-template-rows: 50px 200px 3fr 100px 3fr 50px; /* ~1200 px*/ /*11
+    grid-template-rows: 50px 200px 100px 3fr 50px; /* ~1200 px*/ /*11
 }*/
 
 
@@ -42,6 +42,7 @@
 
 #maid-roots-container > select, #stress-explosion-container > select, #maid-power-container > select{
     border: none;
+    width: 94%;
 }
 #attributes-container{
     display:flex;
@@ -95,7 +96,7 @@
 #maid-roots-container, #stress-explosion-container, #maid-power-container{
     box-sizing: border-box;
     border: dotted pink 3px;
-    width: 100%;
+    width: 90%;
     height: 33%;
     border-radius: 10px;
     margin: 10px; 
@@ -107,7 +108,7 @@
     flex-direction: column;
     box-sizing: border-box;
     border: dotted pink 3px;
-    width: 33%;
+    width: 30%;
     height: 250px;
     align-items: center;
     border-radius: 10px;
@@ -144,6 +145,8 @@
 
 #sq-msm-container{
     display:flex;
+    position: relative;
+    margin-left: -8px;
 }
 /*.sheet-skill-label{
 /*display: block;
@@ -152,7 +155,36 @@ align-self: center;
 
 #bio-info{
     position: relative;
-    margin-left: 570px;
+    left: 540px;
+    top: -300px;
+}
+#name-container input, #age-container input{
+    width: 100px;
+}
+#maid-colors-container input{
+    width: 90px;
+}
+#age-container{
+    position: relative;
+    top: -56px;
+    left: 150px;
+}
+
+#maid-colors-container{
+    position: relative;
+}
+
+.bio{
+    display: block;
+}
+.colors-label{
+    position: relative;
+    display: inline-block;
+    width: 10%;
+}
+
+#eyes{
+    top: -28px;
 }
 
 #athletics-label:hover, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
