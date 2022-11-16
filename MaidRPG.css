@@ -36,12 +36,21 @@
     border-bottom: solid black 1px;
 }
 
+#special-qualities-container{
+    border-bottom: 50px;
+}
+
 #maid-roots-container > select, #stress-explosion-container > select, #maid-power-container > select{
     border: none;
 }
 #attributes-container{
     display:flex;
     justify-content: space-evenly;
+}
+
+.special-qualities-container{
+    position: relative;
+    margin-bottom: 15px;
 }
 .sheet-skill-container{
     box-sizing: border-box;
@@ -141,6 +150,11 @@
 align-self: center;
 }*/
 
+#bio-info{
+    position: relative;
+    margin-left: 570px;
+}
+
 #athletics-label:hover, #affection-label, #skill-label, #cunning-label, #luck-label, #will-label{
     color: red;
 }
@@ -169,6 +183,7 @@ align-self: center;
 #special-qualities-label, #stress-explosion-label, #maid-roots-label, #maid-power-label{
     margin-left: 15px;
 }
+
 #attributes-label{
     position: absolute;
     color: black;
