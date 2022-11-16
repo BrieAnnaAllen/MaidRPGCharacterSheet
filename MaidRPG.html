@@ -1,34 +1,33 @@
 
 <div class="sheet-container fuzzy-font">
-    <header id="game-title"><span>MAID RPG</span><br> Basic Character Sheet </header>
-<div id="character=basics">
+    <header id="game-title"><span>MAID RPG</span> Basic Character Sheet </header>
     <div id="maid-types-container">
-    <label id="maid-types-label"> Maid Types </label>
-    <select name=maid-types id="maid-types-1">
-        <option value="select">(select one)</option>
-        <option value="lolita">(1) Lolita</option>
-        <option value="sexy">(2) Sexy</option>
-        <option value="pure">(3) Pure</option>
-        <option value="cool">(4) Cool</option>
-        <option value="boyish">(5) Boyish</option>
-        <option value="heroine">(6) Heroine</option>
-    </select>
-    <p> / </p>
-    <select name=maid-types id="maid-types-2">
-        <option value="select">(select one)</option>
-        <option value="lolita">(1) Lolita</option>
-        <option value="sexy">(2) Sexy</option>
-        <option value="pure">(3) Pure</option>
-        <option value="cool">(4) Cool</option>
-        <option value="boyish">(5) Boyish</option>
-        <option value="heroine">(6) Heroine</option>
-    </select>
-    </div>
+        <label id="maid-types-label"> Maid Types </label>
+        <select name=maid-types id="maid-types-1">
+            <option value="select">(select one)</option>
+            <option value="lolita">(1) Lolita</option>
+            <option value="sexy">(2) Sexy</option>
+            <option value="pure">(3) Pure</option>
+            <option value="cool">(4) Cool</option>
+            <option value="boyish">(5) Boyish</option>
+            <option value="heroine">(6) Heroine</option>
+        </select>
+        <p> / </p>
+        <select name=maid-types id="maid-types-2">
+            <option value="select">(select one)</option>
+            <option value="lolita">(1) Lolita</option>
+            <option value="sexy">(2) Sexy</option>
+            <option value="pure">(3) Pure</option>
+            <option value="cool">(4) Cool</option>
+            <option value="boyish">(5) Boyish</option>
+            <option value="heroine">(6) Heroine</option>
+        </select>
+    </div> <!---maid type  div-->
 
     <div id="sq-msm-container">
-    <div id="special-qualities-container" class="sheet-container-design">
-        <label id="special-qualities-label"> Special Qualities</label>
-        <select name="special-qualities" id="special-qualities-1" class="special-qualities-container">
+        <div id="special-qualities-container" class="sheet-container-design">
+            <label id="special-qualities-label"> Special Qualities</label>
+            <select name="special-qualities" id="special-qualities-1" class="special-qualities-select">
             <option value="select">(select one)</option>
             <option value="glasses">(1)(1) Glasses </option>
             <option value="freckles">(1)(2) Freckles</option>
@@ -763,8 +762,8 @@
                 <option value="fairy">&nbsp;&nbsp;&nbsp;&nbsp;(5) Fairy</option>
                 <option value="mutant">&nbsp;&nbsp;&nbsp;&nbsp;(6) Mutant</option>
         </select>
-    </div>
-
+    </div> <!---specialqualities div  div-->
+    </div>  <!---sq msm container  div-->
     <div id="root-ex-pow-container">
         <div id="maid-roots-container">
         <label id="maid-roots-label">Maid Roots</label>
@@ -789,7 +788,7 @@
             <option value="bridal-training"> (63)-(64) Bridal Training</option>
             <option value="who-knows"> (61)-(62) Who Knows?</option>
         </select>
-        </div>
+        </div>  <!---MAID ROOTS CONT DIV   div-->
 
         <div id="stress-explosion-container" >
             <label id="stress-explosion-label"> Stress Explosion!</label>
@@ -814,7 +813,7 @@
                 <option value="spoiled-child"> (63)-(64) Spoiled Child</option>
                 <option value="player-choice"> (65)-(66) Player Choice</option>
             </select>
-        </div>
+        </div>  <!---stress explosions div   div-->
         <div id="maid-power-container" >
             <label id="maid-power-label"> Maid Power</label>
             <select name="maid-power" id="maid-power">
@@ -855,51 +854,48 @@
                     <option value="foreboding">&nbsp;&nbsp;&nbsp;&nbsp;(5) Foreboding</option>
                     <option value="chance-meeting">&nbsp;&nbsp;&nbsp;&nbsp;(6) Chance Meeting</option>
             </select>
-        </div>
-    </div>
-
-
-    </div>
+        </div>  <!---maid power div  div-->
+    </div> <!---root-ex-pow  div-->
     <div id="bio-info">
-        <div id="name-container">
+        <div class="bio-flex">
+            <div>
             <label id="name" for="name" class="bio">Name:</label>
-            <input name="name" type="text" class="bio"/>
+            <input name="name" type="text" class="bio bio-input"/>
+            </div>
+
+            <div>
+                <label id="age" for="age" class="bio"> Age:</label>
+                <input name="age" type="text" class="bio bio-input"/>
+            </div>
         </div>
-        <div id="age-container">
-            <label id="age" for="age" class="bio"> Age:</label>
-            <input name="age" type="text"class="bio"/>
+        
+        <label>Maid Colors</label>
+        <div class="color-flex">
+            <div>
+                <label id="clothes" for="clothes" class="colors-label">Clothes</label> 
+                <input name="clothes" type="text" class="bio-input">
+            </div>
+            <div>
+                <label id="eyes" for="eyes" class="colors-label">Eyes</label>
+                <input name="eyes" type="text" class="bio-input">
+            </div>
+            <div>
+                <label id="hair" for="hair" class="colors-label">Hair</label>
+                <input name="hair" type="text" class="bio-input">
+            </div>
         </div>
 
         
-        <div id="maid-colors-container">
-            <label>Maid Colors</label>
-            
-            <label id="clothes" for="clothes" class="colors-label">Clothes</label> 
-            <label id="eyes" for="eyes" class="colors-label">Eyes</label>
-            <label id="hair" for="hair" class="colors-label">Hair</label>
-            
-            <input name="clothes" type="text">
-            <input name="eyes" type="text">
-            <input name="hair" type="text">
-        </div>
-        
-        
-    </div>
-
-    <!--<label for="name">Name<input id="name" type="text" class="sheet-white-input-box"/></label>
-    <label for="age">Age<input id="age" type="text" class="sheet-white-input-box"/></label>
-
-    <label for="clothes" >Clothes</label>
-    <label for="eye">Eye</label>
-    <label for="hair">Hair</label>
-
-    <input id="clothes" type="text" class="sheet-white-input-box"/>
-    <input id="eye" type="text" class="sheet-white-input-box"/>
-    <input id="hair" type="text" class="sheet-white-input-box"/> -->
+        </div> <!---bio info-pow  div-->
+   
+   <!---
 </div>
+    </div>
+    -->
 
-<label id="attributes-label">Attributes</label>
+
 <div id="attributes-container">
+    <label id="attributes-label">Attributes</label>
     <div id="athletics-container" class="sheet-skill-container">
         <button id="athletics-roll" type="roll" class="txt-btn" value="/roll 2d6 + @{athletics}" name="roll_AthleticsCheck">
             Athletics
@@ -941,8 +937,16 @@
         </button>
         <input id="will" name="attr_will" class="sheet-skill-input" type="number" />
     </div>
+</div> <!---attributes container  div-->
+
+<div id="stress-favor-notes-container">
+    <div id="stress-container">
+        <label>Stress</label>
+        <input id="stress" name="attr_stressamount" type="number"/>
+    </div>
     
 </div>
+
 </div>
 
 
