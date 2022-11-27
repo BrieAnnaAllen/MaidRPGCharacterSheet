@@ -10,10 +10,13 @@
     display: grid;
     min-width: 870px;
     max-width: 870px;
-    grid-template-columns: 250px 250px 50px 280px;
+    grid-template-columns: 230px 230px 90px 280px;
     grid-template-rows: 110px 50px 320px 200px 200px 200px 200px 50px; 
  } 
- 
+ :root{
+    --border-color: pink;
+
+ }
  
 #maid-types-container{
     box-sizing: border-box;
@@ -276,7 +279,15 @@ align-self: center;
     grid-row: 7 / 8;
     grid-column: 1 / 4;
 }
-#stress-container, #notes-container, #favor-container {
+#maid-weapon-container{
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+}
+#appearence-personality-container{
+    grid-row: 6 / 8;
+    grid-column: 4 / 5;
+}
+#stress-container, #notes-container, #favor-container, #maid-weapon-container,#appearence-personality-container {
     position: relative;
     box-sizing: border-box;
     border: 2px pink dotted;
