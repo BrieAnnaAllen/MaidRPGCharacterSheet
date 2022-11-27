@@ -1,6 +1,6 @@
 
 <div class="sheet-container fuzzy-font">
-    <header id="game-title"><span>MAID RPG</span> Basic Character Sheet </header>
+    <header id="game-title"><span>MAID RPG</span><br> Basic Character Sheet </header>
     <div id="maid-types-container">
         <label id="maid-types-label"> Maid Types </label>
         <select name=maid-types id="maid-types-1">
@@ -872,16 +872,86 @@
         <label>Maid Colors</label>
         <div class="color-flex">
             <div>
-                <label id="clothes" for="clothes" class="colors-label">Clothes</label> 
-                <input name="clothes" type="text" class="bio-input">
+                <label id="clothes" for="clothes-color" class="colors-label">Clothes</label> 
+                <select name="maid-colors" id="clothes-color" class="bio-input">
+                    <option value="select">(select one)</option>
+                    <option value="red">(1)(1) Red</option>
+                    <option value="purple">(1)(2) Purple</option>
+                    <option value="orange">(1)(3)Orange</option>
+                    <option value="pink">(1)(4) Pink</option>
+                    <option value="brown">(1)(5) Brown</option>
+                    <option value="blue">(2)(2) Blue</option>
+                    <option value="green">(2)(3) Green</option>
+                    <option value="sky-blue">(2)(4)Sky Blue</option>
+                    <option value="navy">(2)(5) Navy</option>
+                    <option value="indigo">(2)(6) Indigo</option>
+                    <option value="yellow">(3)(3) Yellow</option>
+                    <option value="cream">(3)(4) Cream</option>
+                    <option value="beige">(3)(5) Beige</option>
+                    <option value="gold">(3)(6) Gold</option>
+                    <option value="white">(4)(4) White</option>
+                    <option value="gray">(4)(5) Gray</option>
+                    <option value="silver">(4)(6) Silver</option>
+                    <option value="black">(5)(5) Black</option>
+                    <option value="silver">(5)(6) Metallic</option>
+                    <option value="transparent">(6)(6) Transparent</option>
+                    <option value="rainbow">(6)(6) Rainbow</option>
+                </select>
+                <!--<input name="clothes" type="text" class="bio-input">-->
             </div>
             <div>
-                <label id="eyes" for="eyes" class="colors-label">Eyes</label>
-                <input name="eyes" type="text" class="bio-input">
+                <label id="eyes" for="eyes-color" class="colors-label">Eyes</label>
+                <select name="maid-colors" id="eyes-color" class="bio-input">
+                    <option value="select">(select one)</option>
+                    <option value="red">(1)(1) Red</option>
+                    <option value="purple">(1)(2) Purple</option>
+                    <option value="orange">(1)(3)Orange</option>
+                    <option value="pink">(1)(4) Pink</option>
+                    <option value="brown">(1)(5) Brown</option>
+                    <option value="blue">(2)(2) Blue</option>
+                    <option value="green">(2)(3) Green</option>
+                    <option value="sky-blue">(2)(4)Sky Blue</option>
+                    <option value="navy">(2)(5) Navy</option>
+                    <option value="indigo">(2)(6) Indigo</option>
+                    <option value="yellow">(3)(3) Yellow</option>
+                    <option value="cream">(3)(4) Cream</option>
+                    <option value="beige">(3)(5) Beige</option>
+                    <option value="gold">(3)(6) Gold</option>
+                    <option value="white">(4)(4) White</option>
+                    <option value="gray">(4)(5) Gray</option>
+                    <option value="silver">(4)(6) Silver</option>
+                    <option value="black">(5)(5) Black</option>
+                    <option value="silver">(5)(6) Metallic</option>
+                    <option value="transparent">(6)(6) Transparent</option>
+                    <option value="rainbow">(6)(6) Rainbow</option>
+                </select>
             </div>
             <div>
-                <label id="hair" for="hair" class="colors-label">Hair</label>
-                <input name="hair" type="text" class="bio-input">
+                <label id="hair" for="hair-color" class="colors-label">Hair</label>
+                <select name="maid-colors" id="hair-color" class="bio-input">
+                    <option value="select">(select one)</option>
+                    <option value="red">(1)(1) Red</option>
+                    <option value="purple">(1)(2) Purple</option>
+                    <option value="orange">(1)(3)Orange</option>
+                    <option value="pink">(1)(4) Pink</option>
+                    <option value="brown">(1)(5) Brown</option>
+                    <option value="blue">(2)(2) Blue</option>
+                    <option value="green">(2)(3) Green</option>
+                    <option value="sky-blue">(2)(4)Sky Blue</option>
+                    <option value="navy">(2)(5) Navy</option>
+                    <option value="indigo">(2)(6) Indigo</option>
+                    <option value="yellow">(3)(3) Yellow</option>
+                    <option value="cream">(3)(4) Cream</option>
+                    <option value="beige">(3)(5) Beige</option>
+                    <option value="gold">(3)(6) Gold</option>
+                    <option value="white">(4)(4) White</option>
+                    <option value="gray">(4)(5) Gray</option>
+                    <option value="silver">(4)(6) Silver</option>
+                    <option value="black">(5)(5) Black</option>
+                    <option value="silver">(5)(6) Metallic</option>
+                    <option value="transparent">(6)(6) Transparent</option>
+                    <option value="rainbow">(6)(6) Rainbow</option>
+                </select>
             </div>
         </div>
 
@@ -939,12 +1009,27 @@
     </div>
 </div> <!---attributes container  div-->
 
-<div id="stress-favor-notes-container">
-    <div id="stress-container">
-        <label>Stress</label>
-        <input id="stress" name="attr_stressamount" type="number"/>
+<div id="stress-container">
+    <label>Stress</label>
+    <input id="stress" name="attr_stressamount" type="number"/>
+    <div id="spirit-container">
+        <label>Spirit ( <input id="spirit" type="number"/> ) </label>
+        <p>Will x10</p>
     </div>
-    
+</div>
+
+<div id="favor-container">
+    <label>Favor</label>
+    <input id="favor" name="attr_favoramount" type="number"/>
+    <div id="sf-container">
+        <label>Starting Favor ( <input id="favor" type="number"/> ) </label>
+        <p>Affection x2</p>
+    </div>
+</div>
+
+<div id="notes-container">
+    <label>Notes (Items, etc.)</label>
+    <textarea id="notes"></textarea>
 </div>
 
 </div>
