@@ -823,36 +823,36 @@
                     <option value="iron-wall">Iron Wall (2)</option>
                     <option value="trespass">Trespass (3)</option>
                     <option value="weapon-nowhere">Weapon From Nowhere (4)</option>
-                    <option value="giant-weapon">(5) Giant Weapon</option>
-                    <option value="ultimate-retort">(6) Ultimate Retort</option>
+                    <option value="giant-weapon">Giant Weapon (5)</option>
+                    <option value="ultimate-retort">Ultimate Retort (6)</option>
                 <option disabled class="optgroup-replacement">Highest Attribute: Affection</option>
-                    <option value="maidens-tears"> (1) Maiden's Tears</option>
-                    <option value="world-two">(2) World for Two</option>
-                    <option value="power-friendship">(3) Power of Friendship</option>
-                    <option value="cooked-love">(4) Cooked With Love</option>
-                    <option value="window-soul">(5) Window of the Soul</option>
-                    <option value="passionate-gaze">(6) Passionate Gaze</option>
+                    <option value="maidens-tears">Maiden's Tears (1)</option>
+                    <option value="world-two">World for Two (2)</option>
+                    <option value="power-friendship">Power of Friendship (3)</option>
+                    <option value="cooked-love">Cooked With Love (4)</option>
+                    <option value="window-soul">Window of the Soul (5)</option>
+                    <option value="passionate-gaze">Passionate Gaze (6)</option>
                 <option disabled class="optgroup-replacement">Highest Attribute: Skill</option>
-                    <option value="lock-picking"> (1) Lock Picking</option>
-                    <option value="stalking">(2) Stalking</option>
-                    <option value="lie-detector">(3) Lie Detector</option>
-                    <option value="ultimate-menu">(4) Ultimate Menu</option>
-                    <option value="instant-cleaning">(5) Instant Cleaning</option>
-                    <option value="4d-dress">(6) 4-D Dress</option>
+                    <option value="lock-picking">Lock Picking (1)</option>
+                    <option value="stalking">Stalking (2)</option>
+                    <option value="lie-detector">Lie Detector (3)</option>
+                    <option value="ultimate-menu">Ultimate Menu (4)</option>
+                    <option value="instant-cleaning">Instant Cleaning (5)</option>
+                    <option value="4d-dress">4-D Dress (6)</option>
                 <option disabled class="optgroup-replacement">Highest Attribute: Cunning</option>
-                    <option value="punishment"> (1) Punishment</option>
-                    <option value="instant-restraint">(2) Instant Restraining</option>
-                    <option value="coercion">(3) Coercion</option>
-                    <option value="trap">(4) Trap</option>
-                    <option value="fake-crying">(5) Fake Crying</option>
-                    <option value="mockery">(6) Mockery</option>
+                    <option value="punishment">Punishment (1)</option>
+                    <option value="instant-restraint">Instant Restraining (2)</option>
+                    <option value="coercion">Coercion (3) </option>
+                    <option value="trap">Trap (4)</option>
+                    <option value="fake-crying">Fake Crying (5) </option>
+                    <option value="mockery">Mockery (6)</option>
                 <option disabled class="optgroup-replacement">Highest Attribute: Luck</option>
-                    <option value="karma"> (1) Karma</option>
-                    <option value="saw-it">(2) Saw It</option>
-                    <option value="teleport">(3) Teleport</option>
-                    <option value="escape">(4) Escape</option>
-                    <option value="foreboding">(5) Foreboding</option>
-                    <option value="chance-meeting">(6) Chance Meeting</option>
+                    <option value="karma">Karma (1)</option>
+                    <option value="saw-it">Saw It (2)</option>
+                    <option value="teleport">Teleport (3)</option>
+                    <option value="escape">Escape (4)</option>
+                    <option value="foreboding">Foreboding (5)</option>
+                    <option value="chance-meeting">Chance Meeting (6)</option>
             </select>
         </div>  <!---maid power div  div-->
     </div> <!---root-ex-pow  div-->
@@ -1014,8 +1014,9 @@
     <input id="stress" name="attr_stressamount" type="number"/>
     <div id="spirit-container">
         <label>Spirit ( <input id="spirit" type="number"/> ) </label>
-        <p>Will x10</p>
+        <p class="fuzzy-font">Will x10</p>
     </div>
+    <textarea id="stress-extra"></textarea>
 </div>
 
 <div id="favor-container">
@@ -1023,8 +1024,9 @@
     <input id="favor" name="attr_favoramount" type="number"/>
     <div id="sf-container">
         <label>Starting Favor ( <input id="favor" type="number"/> ) </label>
-        <p>Affection x2</p>
+        <p class="fuzzy-font">Affection x2</p>
     </div>
+    <textarea id="favor-extra"></textarea>
 </div>
 
 <div id="notes-container">
@@ -1073,6 +1075,7 @@
         <option value="internal-weapon">(6)(5) Internal Weapons </option>
         <option value="religious-symbol">(6)(6) Religious Symbol </option>
     </select>
+    <textarea id="maid-weapon-description"></textarea>
 </div>
 
 <div id="appearence-personality-container">

@@ -11,7 +11,7 @@
     min-width: 870px;
     max-width: 870px;
     grid-template-columns: 230px 230px 90px 280px;
-    grid-template-rows: 110px 50px 290px 200px 200px 200px 200px 50px; 
+    grid-template-rows: 110px 50px 290px 150px 200px 200px 200px 50px; 
  } 
  :root{
     --border-color: pink;
@@ -54,12 +54,21 @@
 
 
 #maid-roots-container > select, #stress-explosion-container > select, #maid-power-container > select,
-.bio-input{
+.bio-input, #maid-weapon{
     border: none;
 }
 #attributes-container{
+    position: relative;
     display:flex;
     justify-content: space-evenly;
+    grid-column: 1 / 5;
+    grid-row: 4 / 5 ;
+    box-sizing: border-box;
+    background-color: lightgray;
+    border-top: 30px solid lightgrey;
+    border-bottom: 10px solid lightgrey;
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
 #root-ex-pow-container{
     position: relative;
@@ -157,10 +166,6 @@
     border: white;
 }
 
-#attributes-container{
-    grid-column: 1 / 5;
-    grid-row: 4 / 5 ;
-}
 
 
 .ui-dialog .charsheet button[type=roll]:before {
@@ -247,13 +252,6 @@ align-self: center;
     font-size: 30px;
 }
 
-#attributes-container{
-    box-sizing: border-box;
-    background-color: lightgray;
-    border-top: 30px solid lightgrey;
-    border-bottom: 10px solid lightgrey;
-    border-radius: 15px;
-}
 
 
 #special-qualities-label, #stress-explosion-label, #maid-roots-label, #maid-power-label{
@@ -263,7 +261,7 @@ align-self: center;
 #attributes-label{
     position: absolute;
     color: black;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: -20px;
     z-index: 1;
     font-size: 20px;
@@ -294,18 +292,76 @@ align-self: center;
 #stress-container, #notes-container, #favor-container, #maid-weapon-container,#appearence-personality-container {
     position: relative;
     box-sizing: border-box;
-    border: 2px pink dotted;
+    border: 3px pink dotted;
     margin-bottom: 10px;
     border-radius: 5px;
-
 }
-#spirit-container{
+
+#stress-container, #notes-container, #favor-container{
+    margin-right: 10px;
+}
+
+#notes{
+    width: 522px;
+    height: 140px;
+}
+#appearance-personality{
     position: relative;
-    left: 420px;
-    top: -57px;
+    height: 342px;
+    width: 261px;
+}
+#maid-weapon-description{
+    position: relative;
+    height: 102px;
+    width: 260px;
+}
+
+#maid-weapon-description, #appearance-personality, #stress-extra, #favor-extra{
+    margin-left: 2px;
+}
+textarea, #spirit, #favor, #stress{
+    background-color: white;
+    border: none;
+}
+#stress-extra{
+    position: relative;
+    top: -40px;
+    height: 124px;
+    width: 520px;
+}
+#favor-extra{
+    position: relative;
+    top: -40px;
+    height: 120px;
+    width: 520px;
 }
 .inline{
     display: inline-block;
+}
+#sf-container{
+    position: relative;
+    left: 340px;
+    top: -35px;
+}
+
+#spirit-container{
+    position: relative;
+    left: 410px;
+    top: -30px;
+}
+
+#spirit-container p{
+    position: relative;
+    left: 60px;
+}
+#sf-container p{
+    position: relative;
+    left: 100px;
+}
+
+#favor, #stress, #stress-container label, #favor-container label{
+    display: inline;
+    margin-top: 5px;
 }
 /* font-family: 'Covered By Your Grace', cursive;
 font-family: 'Fuzzy Bubbles', cursive;
