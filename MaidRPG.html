@@ -1,4 +1,10 @@
 
+<script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>
 <div class="sheet-container fuzzy-font">
     <header id="game-title"><span>MAID RPG</span><br> Basic Character Sheet </header>
     <div id="maid-types-container">
@@ -868,7 +874,9 @@
                 <input name="age" type="text" class="bio bio-input"/>
             </div>
         </div>
-        
+        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<p><img id="output" width="200" /></p>
         <label>Maid Colors</label>
         <div class="color-flex">
             <div>
