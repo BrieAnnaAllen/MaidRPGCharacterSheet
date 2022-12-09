@@ -54,9 +54,11 @@
 
 
 #maid-roots-container > select, #stress-explosion-container > select, #maid-power-container > select,
-.bio-input, #maid-weapon{
+ #maid-weapon{
     border: none;
 }
+
+
 #attributes-container{
     position: relative;
     display:flex;
@@ -200,8 +202,14 @@ align-self: center;
     margin-bottom: 270px;
 }
 .bio-input{
-    width: 100px;
+    width: 140px;
     position: relative;
+    background-color: white;
+    border: none;
+    transition: border 1s;
+}
+.bio-input:hover, #name:hover{
+    border: solid pink 1px;
 }
 .color-flex{
     display: flex;
