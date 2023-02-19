@@ -6,7 +6,14 @@
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
+html{
+
+}
+body{
+}
+
 .sheet-container{
+    margin-left: 30vw;
     display: grid;
     min-width: 870px;
     max-width: 870px;
