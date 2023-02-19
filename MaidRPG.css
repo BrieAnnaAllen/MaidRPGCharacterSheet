@@ -2,15 +2,11 @@
     
     
 
- .fuzzy-font{
+ .fuzzy-font, select, option, button{
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
-html{
 
-}
-body{
-}
 
 .sheet-container{
     margin-left: 30vw;
@@ -66,6 +62,7 @@ body{
 }
 
 
+
 #attributes-container{
     position: relative;
     display:flex;
@@ -85,11 +82,14 @@ body{
     grid-row: 3 / 4;
 }
 
+/*Formats Select Statements within Special Qualities*/
 .special-qualities-select{
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 15px;
 }
+
 
 .sheet-skill-container{
     box-sizing: border-box;
@@ -156,7 +156,7 @@ body{
     margin-top: 10px;
 }
 
-.charsheet button[type=roll].txt-btn{
+.txt-btn{
     display: block;
     background: rgba(255, 255, 255, 1);
     box-shadow: none;
@@ -169,17 +169,12 @@ body{
 }
 
 
-.charsheet button[type=roll].txt-btn:hover{
+.txt-btn:hover{
     background-color:white;
     color: red;
     border: white;
 }
 
-
-
-.ui-dialog .charsheet button[type=roll]:before {
-    content: "";
-}
 
 #sq-msm-container{
     display:flex;
@@ -355,14 +350,14 @@ textarea, #spirit, #favor, #stress{
 }
 #sf-container{
     position: relative;
-    left: 340px;
-    top: -35px;
+   /* left: 340px;
+    top: -35px;*/
 }
 
 #spirit-container{
     position: relative;
-    left: 410px;
-    top: -30px;
+    /*left: 410px;
+    top: -30px;*/
 }
 
 #spirit-container p{
