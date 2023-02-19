@@ -8,6 +8,7 @@
 
 
 
+/*Sets up dimensions of character sheet as well as grid layout*/
 .sheet-container{
     margin-left: 30vw;
     display: grid;
@@ -19,6 +20,12 @@
  :root{
     --border-color: pink;
 
+ }
+ .console-container{
+    position: absolute;
+    top: 0;
+    max-width: 400px;
+    
  }
  
 #maid-types-container{
@@ -55,7 +62,7 @@
     grid-row: 3 / 4;
 }
 
-
+/*Removes border from Select Statements*/
 #maid-roots-container > select, #stress-explosion-container > select, #maid-power-container > select,
  #maid-weapon{
     border: none;
@@ -180,10 +187,6 @@
     display:flex;
     position: relative;
 }
-/*.sheet-skill-label{
-/*display: block;
-align-self: center;
-}*/
 
 #bio-info{
     margin-left: auto;

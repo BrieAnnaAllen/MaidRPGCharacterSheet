@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <script src="MaidRPG.js"></script>
 
 <div class="sheet-container fuzzy-font">
     <header id="game-title"><span>MAID RPG</span><br> Basic Character Sheet </header>
@@ -977,42 +978,42 @@
 <div id="attributes-container">
     <label id="attributes-label">Attributes</label>
     <div id="athletics-container" class="sheet-skill-container">
-        <button id="athletics-roll" class="txt-btn" name="roll_AthleticsCheck">
+        <button id="athletics-roll" class="txt-btn" name="roll_AthleticsCheck" onclick="rollTwoDSix('athletics')">
             Athletics
         </button>
         <input id="athletics" name="attr_athletics" class="sheet-skill-input" type="number"/>
     </div>
 
     <div id="affection-container" class="sheet-skill-container">
-        <button id="affection-roll" type="roll" class="txt-btn" value="/roll 2d6 + @{affection}" name="roll_AffectionCheck">
+        <button id="affection-roll" class="txt-btn"  name="roll_AffectionCheck" onclick="rollTwoDSix('affection')">
             Affection
         </button>
         <input id="affection" name="attr_affection" class="sheet-skill-input" type="number"/>
     </div>
 
     <div id="skill-container" class="sheet-skill-container">
-        <button id="skill-roll" type="roll" class="txt-btn" value="/roll 2d6 + @{skill}" name="roll_SkillCheck">
+        <button id="skill-roll" class="txt-btn" name="roll_SkillCheck" onclick="rollTwoDSix('skill')">
             Skill
         </button>
         <input id="skill" name="attr_skill" class="sheet-skill-input" type="number"/>
     </div>
 
     <div id="cunning-container" class="sheet-skill-container">
-        <button id="cunning-roll" type="roll" class="txt-btn" value="/roll 2d6 + @{cunning}" name="roll_CunningCheck">
+        <button id="cunning-roll" class="txt-btn" name="roll_CunningCheck" onclick="rollTwoDSix('cunning')">
             Cunning
         </button>
         <input id="cunning" name="attr_cunning" class="sheet-skill-input" type="number"/>
     </div>
 
     <div id="luck-container" class="sheet-skill-container">
-        <button id="luck-roll" type="roll" class="txt-btn" value="/roll 2d6 + @{luck}" name="roll_LuckCheck">
+        <button id="luck-roll" class="txt-btn" name="roll_LuckCheck" onclick="rollTwoDSix('luck')">
             Luck
         </button>
         <input id="luck" name="attr_luck" class="sheet-skill-input"  type="number"/>
     </div>
 
     <div id="will-container" class="sheet-skill-container">
-        <button id="will-roll" type="roll" class="txt-btn" value="/roll 2d6 + @{will}" name="roll_willCheck">
+        <button id="will-roll" class="txt-btn" name="roll_willCheck" onclick="rollTwoDSix('will')">
             Will
         </button>
         <input id="will" name="attr_will" class="sheet-skill-input" type="number" />
@@ -1093,8 +1094,14 @@
     <textarea id="appearance-personality"></textarea>
 </div>
 </div>
+<div class="console-container">
+    <p id="display-result">Changes are logged here</p>
+</div>
+
 </body>
 
 </html>
 <!--Button format
     <button type="roll" value="/roll 1d6 + @{Luck}" name="roll_LuckCheck"></button>-->
+
+    
